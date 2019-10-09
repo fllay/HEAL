@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diceaseHT">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/self_LVH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="หัวใจห้องล่างซ้ายโต"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/self_proteinuria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ใข่ขาวในป้สสาวะ"
+            app:layout_constraintStart_toStartOf="@+id/self_LVH"
+            app:layout_constraintTop_toBottomOf="@+id/self_LVH" />
+
+        <CheckBox
+            android:id="@+id/self_atherosclerotic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atherosclerotoc plaque ต่าง ๆ ที่ carotid หรือ aorta"
+            app:layout_constraintStart_toStartOf="@+id/self_proteinuria"
+            app:layout_constraintTop_toBottomOf="@+id/self_proteinuria" />
+
+        <CheckBox
+            android:id="@+id/self_retinopathy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="จอประสาทตาเสื่อมจากความกันโลหิตสูง"
+            app:layout_constraintStart_toStartOf="@+id/self_atherosclerotic"
+            app:layout_constraintTop_toBottomOf="@+id/self_atherosclerotic" />
+
+        <CheckBox
+            android:id="@+id/self_PVD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="โรคเส้นเลือดส่วนปลายอุดตัน"
+            app:layout_constraintStart_toStartOf="@+id/self_retinopathy"
+            app:layout_constraintTop_toBottomOf="@+id/self_retinopathy" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="123dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/self_PVD"
+            app:layout_constraintTop_toBottomOf="@+id/self_PVD">
+
+            <RadioButton
+                android:id="@+id/self_ckd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ภาวะไตวายเรื้อรัง ระดับ 1" />
+
+            <RadioButton
+                android:id="@+id/self_ckd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ภาวะไตวายเรื้อรัง ระดับ 2" />
+
+            <RadioButton
+                android:id="@+id/self_ckd3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ภาวะไตวายเรื้อรัง ระดับ 3" />
+
+            <RadioButton
+                android:id="@+id/self_ckd4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ภาวะไตวายเรื้อรัง ระดับมากว่า 4" />
+        </RadioGroup>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

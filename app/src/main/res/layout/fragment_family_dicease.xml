@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".familyDicease">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/familyDiabetes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="เบาหวาน"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/familyGastationalDiabetes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gastational Diabetes"
+            app:layout_constraintStart_toStartOf="@+id/familyDiabetes"
+            app:layout_constraintTop_toBottomOf="@+id/familyDiabetes" />
+
+        <CheckBox
+            android:id="@+id/familyHighBloodPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ความดันสูง"
+            app:layout_constraintStart_toStartOf="@+id/familyGastationalDiabetes"
+            app:layout_constraintTop_toBottomOf="@+id/familyGastationalDiabetes" />
+
+        <CheckBox
+            android:id="@+id/familyCoronaryAryeryDicease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coronary Artery Dicease"
+            app:layout_constraintStart_toStartOf="@+id/familyHighBloodPressure"
+            app:layout_constraintTop_toBottomOf="@+id/familyHighBloodPressure" />
+
+        <CheckBox
+            android:id="@+id/familyCardiacArrhythmias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardiac arrhythmias"
+            app:layout_constraintStart_toStartOf="@+id/familyCoronaryAryeryDicease"
+            app:layout_constraintTop_toBottomOf="@+id/familyCoronaryAryeryDicease" />
+
+        <CheckBox
+            android:id="@+id/familyHighCholesterol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Cholesterol"
+            app:layout_constraintStart_toStartOf="@+id/familyCardiacArrhythmias"
+            app:layout_constraintTop_toBottomOf="@+id/familyCardiacArrhythmias" />
+
+        <CheckBox
+            android:id="@+id/familyGout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gout"
+            app:layout_constraintStart_toStartOf="@+id/familyHighCholesterol"
+            app:layout_constraintTop_toBottomOf="@+id/familyHighCholesterol" />
+
+        <CheckBox
+            android:id="@+id/familyPolycysticOvarianSyndrome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Polycystic Ovarian Syndrome"
+            app:layout_constraintStart_toStartOf="@+id/familyGout"
+            app:layout_constraintTop_toBottomOf="@+id/familyGout" />
+
+        <CheckBox
+            android:id="@+id/familyDeliveredOverweightBaby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered overweight baby"
+            app:layout_constraintStart_toStartOf="@+id/familyPolycysticOvarianSyndrome"
+            app:layout_constraintTop_toBottomOf="@+id/familyPolycysticOvarianSyndrome" />
+
+        <CheckBox
+            android:id="@+id/familyBloodSugarProblemDuringDietry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood sugar problem during dietry"
+            app:layout_constraintStart_toStartOf="@+id/familyDeliveredOverweightBaby"
+            app:layout_constraintTop_toBottomOf="@+id/familyDeliveredOverweightBaby" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
